@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Fraunces:ital,wght@0,700;1,700&family=Karla:wght@400;700&family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  
+ 
+
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+
+  <section id="sign_up" class="container">
+    <div class="image">
+      <img src="assets/images/illustration-sign-up-mobile.svg">
+    </div>
+    <article class="main">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</li>
+      </ul>
+      <form action="">
+        <label class='info'>Email address</label>
+        <label id="email_req" class='error' hidden='true'>Valid email required</label>
+        <input id="input_window" type="text" placeholder="email@company.com">
+        <button id="sub_button" onclick="error_checker()" class="submit_button" type="button">Subscribe to monthly newsletter</button> 
+      </form>
+    </article>
+  </section>
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+<section id="success" class="container success" hidden>
+  <svg id="icon_success" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg>
+
+  <article id="success_massage">
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to <span id="conf_email">ash@loremcompany.com.</span> Please open it and click the button inside to confirm your subscription.</p>
+  </article>
+  <button id="dismiss_button">Dismiss message</button>
+</section>
+  <!-- Success message end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
